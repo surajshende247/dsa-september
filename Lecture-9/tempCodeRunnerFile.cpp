@@ -17,7 +17,7 @@ void findMiddleElement(Node *node)
     Node *fast = node;
     Node *slow = node;
 
-    while(fast->next!=NULL)
+    while(fast!=NULL && fast->next!=NULL)
     {
          fast = fast->next->next;
          slow = slow->next;
