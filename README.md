@@ -4,7 +4,7 @@
 
 ## Linked List
 
-[1)LinkedList](https://github.com/surajshende247/dsa-september/blob/master/Lecture-7/1%29LinkedList.cpp)
+<a name="1)LinearSearch.cpp" href="https://github.com/surajshende247/dsa-september/blob/master/1)%20Array/1)LinearSearch.cpp">1)LinearSearch.cpp</a>
 
 [2)LnkedList Traversal](https://github.com/surajshende247/dsa-september/blob/master/Lecture-9/1%29LinkedListTraversal.cpp)
 
