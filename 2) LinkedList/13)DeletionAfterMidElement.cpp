@@ -22,17 +22,20 @@ void traverseLinkedList(Node *node)
 }
 
 
-void insertAfterNthElement(int data, int npos, Node *node)
+void deleteAfterMiddleElement(Node *node)
 {
-     while(node->next!=NULL && npos>1)
-     {
-         node = node->next;
-         npos--;
-     }
+    Node *slow = node;
+    Node *fast = node;
 
-     Node *newNode = new Node(data);
-     newNode->next = node->next;
-     node->next = newNode;
+    while(fast!=NULL && fast->next!=NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+
+    Node *temp = slow->next;
+    slow->next = temp->next;
+    free(temp);
 }
 
 
@@ -54,12 +57,12 @@ int main()
     second->next = third;
     third->next=fourth;
 
-    cout<<"Before Insertion: ";
+    cout<<"Before Deletion: ";
     traverseLinkedList(head);
 
-    insertAfterNthElement(21, 3, head);
+    deleteAfterMiddleElement(head);
 
-    cout<<"\n\n After Insertion: ";
+    cout<<"\n\n After Deletion: ";
     traverseLinkedList(head);
 
     return 0;

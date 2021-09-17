@@ -23,11 +23,11 @@ void showNthFromLast(Node *head, int n){
 
     int npos=count-n+1;
 
-    if(npos>count || npos<0)
+    /*if(npos>count || npos<0)
     {
         cout<<"Invalid Request";
         return;
-    }
+    }*/
 
     node=head;
     while(node!=NULL && npos>1)
@@ -50,5 +50,5 @@ int main()
     a->next = b;
     b->next = c;
 
-    showNthFromLast(head, 10);
+    showNthFromLast(head, 2);
 }
