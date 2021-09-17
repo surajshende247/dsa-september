@@ -1,6 +1,6 @@
 # DSA September Bootcamp
 
-### Total Questions = 🏆 23
+### Total Questions = 🏆 25
 
 ## Array
 <a href="https://github.com/surajshende247/dsa-september/blob/master/1)%20Array/1)LinearSearch.cpp">1)Linear Search</a>
@@ -52,6 +52,10 @@
 <a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/8)InsertionAfterMiddleElement.cpp">8)Insertion After Middle Element</a>
 
 <a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/9)InsertionAfterNthElement.cpp">9)Insertion After Nth Element</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/10)DeletionAtBeginning.cpp">10)Deletion At Beginning</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/11)DeletionAtEnd.cpp">11)Deletion At End</a>
 
 
 
