@@ -53,6 +53,8 @@
 
 <a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/9)InsertionAfterNthElement.cpp">9)Insertion After Nth Element</a>
 
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/10)DeletionAtBeginning.cpp">10)Deletion At Beginning</a>
+
 
 
 <a href="#"></a>
