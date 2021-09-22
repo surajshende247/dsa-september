@@ -1,27 +1,78 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+
+bool checkBalancedParanthesis(string expr)
+{
+    stack<char> s;
+    int len = expr.length();
+
+    for (int i = 0; i < len; i++)
+    {
+        char currSymbol = expr[i];
+
+        if (currSymbol == '(' || currSymbol == '[' || currSymbol == '{')
+        {
+            s.push(currSymbol);
+            continue;
+        }
+
+        if (s.empty())
+        {
+            return false;
+        }
+
+        char topElement;
+
+        switch (currSymbol)
+        {
+        case ')':
+            topElement = s.top();
+            s.pop();
+            if (topElement == '[' || topElement == '{')
+                return false;
+            break;
+
+        case '}':
+            topElement = s.top();
+            s.pop();
+            if (topElement == '[' || topElement == '(')
+                return false;
+            break;
+
+        case ']':
+            topElement = s.top();
+            s.pop();
+            if (topElement == '{' || topElement == '(')
+                return false;
+            break;
+        }
+    }
+
+    if (s.empty())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 int main()
 {
-    //stack which will store characters
-    stack<char> mystack;
 
-    string str;
-    cout<<"Enter String: ";
-    cin>>str;
+    //string expr = "{()[]}";
 
-    int len = str.length();
-    for(int i=0; i<len; i++)
+    string expr = "{[)[]}";
+
+    if (checkBalancedParanthesis(expr))
     {
-        mystack.push(str[i]);
+        cout << "Balanced";
+    }
+    else
+    {
+        cout << "Not Balanced";
     }
 
-    cout<<"Reversed String is: ";
-
-    while(mystack.empty()==false)
-    {
-        cout<<mystack.top();
-        mystack.pop();
-    )
-
+    return 0;
 }
