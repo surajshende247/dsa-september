@@ -57,6 +57,14 @@
 
 <a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/11)DeletionAtEnd.cpp">11)Deletion At End</a>
 
+## Doubly LinkedList
 
+## Stack
 
-<a href="#"></a>
+<a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/1)Stack.cpp">1)Stack</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/2)ReverseString.cpp">2)Reverse a String Using Stack</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/3)ReverseStringUsingSTLStack.cpp">3)Reverse a String Using STL Stack</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/4)BalancedBrackets.cpp">4)Balanced Brackets</a>
