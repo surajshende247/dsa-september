@@ -57,6 +57,14 @@
 
 <a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/11)DeletionAtEnd.cpp">11)Deletion At End</a>
 
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/12)DeletionAfterGivenNode.cpp">12)Deletion After a Given Node</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/13)DeletionAfterMidElement.cpp">13)Deletion After Mid Element</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/14)DeletionAfterNthElement.cpp">14)Deletion After Nth Element</a>
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/2)%20LinkedList/15)NthElementFromLast.cpp">15)Find Nth Element From Last</a>
+
 ## Doubly LinkedList
 
 ## Stack
