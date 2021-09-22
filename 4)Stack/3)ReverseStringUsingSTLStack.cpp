@@ -22,6 +22,6 @@ int main()
     {
         cout<<mystack.top();
         mystack.pop();
-    )
+    }
 
 }
