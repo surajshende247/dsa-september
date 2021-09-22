@@ -1,6 +1,6 @@
 # DSA September Bootcamp
 
-### Total Questions = 🏆 25
+### Total Questions = 🏆 33
 
 ## Array
 <a href="https://github.com/surajshende247/dsa-september/blob/master/1)%20Array/1)LinearSearch.cpp">1)Linear Search</a>
