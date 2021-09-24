@@ -1,6 +1,6 @@
 # DSA September Bootcamp
 
-### Total Questions = 🏆 33
+### Total Questions = 🏆 34
 
 ## Array
 <a href="https://github.com/surajshende247/dsa-september/blob/master/1)%20Array/1)LinearSearch.cpp">1)Linear Search</a>
@@ -76,3 +76,8 @@
 <a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/3)ReverseStringUsingSTLStack.cpp">3)Reverse a String Using STL Stack</a>
 
 <a href="https://github.com/surajshende247/dsa-september/blob/master/4)Stack/4)BalancedBrackets.cpp">4)Balanced Brackets</a>
+
+## Queue
+
+<a href="https://github.com/surajshende247/dsa-september/blob/master/5)Queue/1)Queue.cpp">1)Queue</a>
+
