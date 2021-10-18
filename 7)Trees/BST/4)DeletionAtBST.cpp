@@ -12,21 +12,58 @@ class Node{
     }
 };
 
-void findParent(int val, Node*& parent, Node*& curr){
+void bfs(Node *root){
+    queue<Node *> q;
+    q.push(root);
 
+    while (!q.empty()) {
+
+        int k = q.size();
+
+        for(int i = 0; i < k; i++){
+            Node *temp = q.front();
+            q.pop();
+
+            cout<<temp->data<<" ";
+
+            if(temp->left!=NULL)
+                q.push(temp->left);
+
+            if(temp->right!=NULL)
+                q.push(temp->right);
+        }   
+        cout<<endl<<endl;     
+    }
+}
+
+void findParent(int val, Node*& parent, Node*& curr){
+    while(curr!=NULL && curr->data!=val )
+    {
+        parent = curr;
+        if(val<curr->data)
+        {
+            curr = curr->left;
+        }
+        else{
+            curr = curr->right;
+        }
+    }
 }
 
 Node* getRightMin(Node* node){
-
+    while(node->left!=NULL){
+        node = node->left;
+    }
+    return node;
 }
 
-void deleteNode(Note*& root, int val)
+void deleteNode(Node*& root, int val)
 {
     if(root==NULL){
         return;
     }
 
-    Node* curr = root;
+    Node* curr = root; 
     Node* parent;
 
     findParent(val, parent, curr);
@@ -52,8 +89,8 @@ void deleteNode(Note*& root, int val)
     }
     else if(curr->left!=NULL && curr->right!=NULL){
         Node *rightMin = getRightMin(curr->right);
-        curr->data = rightMin;
-        deleteNode(rightMin);
+        curr->data = rightMin->data;
+        deleteNode(curr->right, curr->data);
     }
     else
     {
@@ -90,7 +127,14 @@ int main(){
     root->right = b;
 
     b->left = c;
-    b-right = d;
+    b->right = d;
+    cout<<"\n Before Deletion: \n";
+    bfs(root);
+
+    deleteNode(root, 10);
+
+    cout<<"\n After Deletion: \n";
+    bfs(root);
 
     return 0;
 }
