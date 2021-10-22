@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "new": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "vector": "cpp"
     },
     "cmake.configureOnOpen": false
 }

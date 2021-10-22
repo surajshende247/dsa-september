@@ -45,6 +45,47 @@ class MinHeap{
             cout<<arr[i]<<" ";
         }
     }
+
+    void heapify(int i)
+    {
+        int left = getLeft(i);
+        int right = getRight(i);
+
+        int smallest = i;
+
+        if(left<size && arr[left]<arr[i]) 
+            smallest = left;
+
+        if(right<size && arr[right]<arr[smallest]) 
+            smallest = right;
+
+        if(smallest!=i)
+        {
+            swap(arr[i],arr[smallest]);
+            minheapify(smallest);
+        }
+    }
+
+    //decrease key
+    int extractMin()
+    {
+        if(size<=0)
+        {
+            return -1;
+        }
+        else if(size==1)
+        {
+            size=0;
+            return arr[0];
+        }
+        int temp = arr[0];
+        arr[0] = arr[size-1];
+        size--;
+
+        heapify(0);
+
+        return temp;
+    }
 };
 
 int main()
@@ -57,7 +98,7 @@ int main()
     h.insert(15);
     h.insert(20);
 
-    h.traverseHeap();
+    //h.traverseHeap();
 
     return 0;
 }
