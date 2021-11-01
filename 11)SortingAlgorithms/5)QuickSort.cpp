@@ -4,14 +4,14 @@ using namespace std;
 int Partition(int arr[], int low, int high)
 {
     int pivot = arr[low];
-    int i=low;
+    int i=low+1;
     int j=high;
-    while(i<j)
+    while(i<=j)
     {
         do{
             i++;
         }
-        while(arr[i]<=pivot);
+        while(arr[i]<pivot);
 
         do{
             j--;
@@ -20,7 +20,7 @@ int Partition(int arr[], int low, int high)
         
         swap(arr[i],arr[j]);
     }
-    if(i<j)
+    if(i<=j)
     {
         swap(arr[low],arr[j]);
     }
