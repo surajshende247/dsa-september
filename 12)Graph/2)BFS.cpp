@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 void addEdge(vector<int> graph[], int v1, int v2){
     graph[v1].push_back(v2);
     graph[v2].push_back(v1);
@@ -20,9 +19,8 @@ void BFS(vector<int> graph[], int s, bool visited[]){
         cout<<element<<" ";
 
 
-        for(int i=0;i< graph[element].size(); i++)
-        {
-            int num = graph[element][i];
+        for(int num: graph[element])
+        {             
             if(visited[num]==false)
             {
                 visited[num] = true;
